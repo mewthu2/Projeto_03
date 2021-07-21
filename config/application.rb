@@ -1,16 +1,6 @@
 require_relative "boot"
 
-require "rails"
-
-require "active_model/railtie"
-require "active_job/railtie"
-require "active_record/railtie"
-require "active_storage/engine"
-require "active_controller/railtie"
-require "active_mailer/railtie"
-require "active_view/railtie"
-require "active_cable/engine"
-require "sprockets/railtie"
+require "rails/all"
 
 
 # Require the gems listed in Gemfile, including any gems
@@ -29,6 +19,6 @@ module TimeToAnswer
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
-    config.generators.system_testes = nil
+    config.generators.system_testes = nil;
   end
 end
