@@ -5,12 +5,6 @@
 
 import Rails from "@rails/ujs"
 import * as ActiveStorage from "@rails/activestorage"
-import "channels"
-import "jquery";
-import "bootstrap";
-import "fastclick";
-import "nprogress";
-import "malihu-custom-scrollbar-plugin"
 
 Rails.start()
 ActiveStorage.start()

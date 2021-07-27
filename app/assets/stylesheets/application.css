@@ -9,12 +9,7 @@
  * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
- */ 
-    
-    *= require bootstrap/dist/css/bootstrap
-    *= require font-awesome/css/font-awesome
-    *= require nprogress/nprogress
-    *= require malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar
-    *= require custom   
-
+ *= require fontawesome-free/css/all
+*= require sb-admin-2  
+ */
    
