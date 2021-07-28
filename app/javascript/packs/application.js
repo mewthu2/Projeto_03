@@ -5,7 +5,12 @@
 
 import Rails from "@rails/ujs"
 import * as ActiveStorage from "@rails/activestorage"
-
+import "@fortawesome/fontawesome-free/js/all";
+import "@jquery/dist/jquery";
+import "lib/assets/javascripts/sb-admin-2";
+import "lib/javascripts/bootstrap.bundle";
 Rails.start()
 ActiveStorage.start()
+
+
 

@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html>
-    <head>
-     <meta charset="utf-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-     <meta name="description" content="">
-     <meta name="author" content="">
+<html lang="en">
+  <head>
 
-        <title>TimeToAnswer</title>
+    <title>Admin|TimeToAnswer</title>
     
-         <%= csrf_meta_tags %>
-         <%= csp_meta_tag %>
+       <%= csrf_meta_tags %>
+       <%= csp_meta_tag %>
 
-        <%= stylesheet_link_tag 'application'%>
-        <%= stylesheet_link_tag 'admins_backoffice'%>
+      <%= stylesheet_link_tag 'application'%>
+    
 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>TimeToAnswer </title>
+</head>
 
 <body id="page-top">
 
@@ -134,7 +137,8 @@
 
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
-                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+                <button class="rounded-circle" id="sidebarToggle"></button>
+                
             </div>
 
         </ul>
@@ -262,8 +266,7 @@
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_1.svg"
-                                            alt="...">
+                                        <%= image_tag 'undraw_profile_1.svg', class:"rounded-circle" , alt:"..."%>
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div class="font-weight-bold">
@@ -274,8 +277,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
-                                            alt="...">
+                                        
                                         <div class="status-indicator"></div>
                                     </div>
                                     <div>
@@ -286,8 +288,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
-                                            alt="...">
+                                        <%= image_tag 'undraw_profile_3.svg', class:"rounded-circle" , alt:"..."%>
                                         <div class="status-indicator bg-warning"></div>
                                     </div>
                                     <div>
@@ -319,8 +320,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                                <img class="img-profile rounded-circle"
-                                    src="img/undraw_profile.svg">
+                                <%= image_tag 'undraw_profile.svg' ,class:"img-profile rounded-circle"%>
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -353,7 +353,7 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                    <!-- Page Heading -->
+                   <!-- Page Heading -->
                     <h1 class="h3 mb-4 text-gray-800">Admins backoffice</h1>
                     <%= yield %>
 
@@ -403,10 +403,7 @@
             </div>
         </div>
     </div>
-    <%= javascript_pack_tag 'application'%>
-    <%= javascript_pack_tag 'admins_backoffice'%>
-
+<%= javascript_pack_tag 'application'%>
 </body>
 
 </html>
-

@@ -13,8 +13,10 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # folder are already added.
 
 # /app/assets
-Rails.application.config.assets.precompile += %w( admins_backoffice.js admins_backoffice.scss
-    custom.js custom.css application.js )
 
 # /lib/assets
-Rails.application.config.assets.precompile += %w( sb-admin-2.js sb-admin2.css sb-admin-2.min.css sb-admin-2.min.js)
+
+
+# lib/assets/images/img
+Rails.application.config.assets.precompile += %w( img.jpg undraw_profile.svg undraw_profile_1.svg 
+    undraw_profile_2.svg undraw_profile_3.svg )
