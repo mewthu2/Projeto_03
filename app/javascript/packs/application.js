@@ -4,10 +4,13 @@
 // that code so it'll be compiled.
 
 import Rails from "@rails/ujs"
-import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
-import "channels"
-
+import "@fortawesome/fontawesome-free/js/all";
+import "@jquery/dist/jquery";
+import "lib/assets/javascripts/sb-admin-2";
+import "lib/javascripts/bootstrap.bundle";
 Rails.start()
-Turbolinks.start()
 ActiveStorage.start()
+
+
+

@@ -11,4 +11,12 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
-# Rails.application.config.assets.precompile += %w( admin.js admin.css )
+
+# /app/assets
+
+# /lib/assets
+
+
+# lib/assets/images/img
+Rails.application.config.assets.precompile += %w( img.jpg undraw_profile.svg undraw_profile_1.svg 
+    undraw_profile_2.svg undraw_profile_3.svg )
