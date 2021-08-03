@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-   get 'inicio' , to: 'welcome#index'
   namespace :site do
     get 'welcome/index'
   end
@@ -11,6 +10,9 @@ Rails.application.routes.draw do
   end
   devise_for :users
   devise_for :admins
+
+  get 'inicio' , to: 'welcome#index'
+  
   root to: 'site/welcome#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

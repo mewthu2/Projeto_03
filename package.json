@@ -1,13 +1,15 @@
 {
-  "name": "time-to-answer",
+  "name": "a",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
+    "@popperjs/core": "^2.9.2",
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "5.4.0",
     "bootstrap": "^5.0.2",
+    "chart": "^0.1.2",
     "fastclick": "1.0.6",
     "font-awesome": "4.6.3",
     "fontawesome": "^5.6.3",
@@ -17,6 +19,9 @@
     "malihu-custom-scrollbar-plugin": "^3.1.5",
     "metismenu": "3.0.3",
     "nprogress": "^0.2.0",
+    "popper": "^1.0.1",
+    "popper.js": "^1.16.1",
+    "startbootstrap-sb-admin": "^7.0.2",
     "turbolinks": "^5.2.0",
     "webpack": "^4.46.0",
     "webpack-cli": "^3.3.12"
@@ -26,7 +31,22 @@
     "webpack-dev-server": "^3.11.2"
   },
   "main": "index.js",
-  "repository": "https://github.com/mewthu2/Projeto_03.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mewthu2/Projeto_03.git"
+  },
   "author": "danielcorrea <danielcorrea@claretiano.edu.br>",
-  "license": "MIT"
+  "license": "MIT",
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "bugs": {
+    "url": "https://github.com/mewthu2/Projeto_03/issues"
+  },
+  "homepage": "https://github.com/mewthu2/Projeto_03#readme",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
