@@ -11,7 +11,8 @@
     <title>Usuários|Backoffice</title>
   </head>
   <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-">
+  <nav class="navbar navbar-expand-lg navbar-primary bg-">
+    <img src="/images/ETHEREUM-LOGO.png" alt="" width="30" height="24">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Time to answer</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +32,7 @@
       </ul>
       <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Nome do usuário
+            <%= current_user.email%>
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <%= link_to destroy_user_session_path, method: :delete do%> 
@@ -42,7 +43,7 @@
     </div>
   </div>
 </nav>
-        <h1 class="h3 mb-4 text-gray-800">Backoffice dos usuários</h1>
+        <h1 class="h3 mb-4 text-gray-800">-- Backoffice dos usuários --</h1>
                     <%= yield %>
 
       </li>

@@ -21,4 +21,4 @@ Rails.application.config.assets.precompile += %w(
 
 # lib/assets/images/img
 Rails.application.config.assets.precompile += %w( img.jpg undraw_profile.svg undraw_profile_1.svg 
-    undraw_profile_2.svg undraw_profile_3.svg )
+    undraw_profile_2.svg undraw_profile_3.svg @images/ETHEREUM-LOGO.png)
