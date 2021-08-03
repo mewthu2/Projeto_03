@@ -6,5 +6,9 @@
 import Rails from "@rails/ujs"
 import * as ActiveStorage from "@rails/activestorage"
 Rails.start()
+import 'jquery'
+import 'popper.js'
+import 'bootstrap'
+import 'main'
 ActiveStorage.start()
 
