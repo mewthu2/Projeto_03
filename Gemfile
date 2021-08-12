@@ -23,6 +23,7 @@ gem 'tty-spinner'
 gem 'jquery-rails'
 gem 'rails-ujs', '~> 0.1.0'
 gem 'bootstrap'
+gem 'faker'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -42,6 +43,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'awesome_print'
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 4.1.0'
   # Display performance information such as SQL time and flame graphs for each request in your browser.

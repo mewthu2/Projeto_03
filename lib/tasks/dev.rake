@@ -5,11 +5,12 @@ DEFAULT_PASSWORD = 123456
   desc "Configura o ambiente de desenvolvimento"
   task setup: :environment do
     if Rails.env.development?
-    show_spinner("Apagando BD...") { %x(rails db:drop) }
-    show_spinner("Apagando BD...") { %x(rails db:create) }
-    show_spinner("Apagando BD...") { %x(rails db:migrate) }
-    show_spinner("Cadastrando o administrador padrão..") { %x(rails dev:add_default_admin) }
-    show_spinner("Cadastrando o usuário padrão..") { %x(rails dev:add_default_user) }
+    puts ("Apagando BD...") { %x(rails db:drop) }
+    puts ("Apagando BD...") { %x(rails db:create) }
+    puts ("Apagando BD...") { %x(rails db:migrate) }
+    puts ("Cadastrando o administrador padrão..") { %x(rails dev:add_default_admin) }
+    puts ("Cadastrando o administradores extras..") { %x(rails dev:add_extra_admin) }
+    puts ("Cadastrando o usuário padrão..") { %x(rails dev:add_default_user) }
 
     #%x(rails dev:add_mining_types)
     else
@@ -26,6 +27,19 @@ password: DEFAULT_PASSWORD,
 password_confirmation: DEFAULT_PASSWORD
 )
 end
+
+##adiciona administradores extras
+desc "Adiciona o administrador padrão"
+task add_extra_admin: :environment do
+  10.times do |i|
+Admin.create!(
+email: Faker::Internet.email,
+password: DEFAULT_PASSWORD,
+password_confirmation: DEFAULT_PASSWORD
+)
+end
+end
+
 ##task Usuário padrão
 
 desc "Adiciona o usuário padrão"
