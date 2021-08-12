@@ -15,10 +15,10 @@
 		<div class="wrapper d-flex align-items-stretch">
 			<nav id="sidebar" class= "bg-primary">
 				<div class="p-4 pt-5">
-            <p><img src="/images/ETHEREUM-LOGO.png" alt="" width="200" height="200"></p>
+            <center><img src="/images/Circle-icons-computer.svg.png" alt="" width="200" height="200"></center>
 	        <ul class="list-unstyled components mb-5">
 	          <li class="active">
-	            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Principal</a>
+	            <!--<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Principal</a>
 	            <ul class="collapse list-unstyled" id="homeSubmenu">
                 <li>
                     <a href="#">Home 1</a>
@@ -30,31 +30,26 @@
                     <a href="#">Home 3</a>
                 </li>
 	            </ul>
+	          </li>-->
+	          <li>
+	              <center>
+                <%= link_to admins_backoffice_welcome_index_path do%>
+                <center>Dashboard</center>
+                <%end%>
+	          </li>
+            <li>
+            <%= link_to admins_backoffice_admins_path do%>
+	              <center>Administradores</center>
+                <%end%>
 	          </li>
 	          <li>
-	              <a href="#">Sobre</a>
-	          </li>
-	          <li>
-              <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+            <!-- Dropdown menu>
+             <!-- <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
               <ul class="collapse list-unstyled" id="pageSubmenu">
                 <li>
                     <a href="#">Page 1</a>
-                </li>
-                <li>
-                    <a href="#">Page 2</a>
-                </li>
-                <li>
-                    <a href="#">Page 3</a>
-                </li>
-              </ul>
-	          </li>
-	          <li>
-              <a href="#">Portifólio</a>
-	          </li>
-	          <li>
-              <a href="#">Deslogar</a>
-	          </li>
 	        </ul>
+          -->
 
 	        <div class="footer">
 	        	
@@ -98,7 +93,7 @@
           </div>
         </nav>
 
-        <h1 class="h3 mb-4 text-gray-800">Backoffice dos administradores</h1>
+        <li class="h3 mb-4 text-gray-800">Backoffice Administrativo</li>
                     <%= yield %>
         </div>
 		</div>
